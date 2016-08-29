@@ -1,0 +1,20 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+- diff command helps by displaying all the lines that are different between the two versions of the file.
+- It is easier to identify the bugs this way, as you don't have to manually scan the entire files for a simple 
+typo or a invalid assignment.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+- Having the entire history of the file, will help to identify any bugs that are created with your recent changes.
+- You can quickly compare the file with older version, to identify the place where you might have introduced a bug.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+- Manually saving the changes will make sure that you are aware of what you are saving, you can add in your comments for the changes that you are introducing. But it can also be seen as a additional step to remember. Sometimes you might forget to commit a current file. When you checkout this same file from the master branch, all your changes will be overwritten.
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+- There might be a instance when the change in multiple files is for one feature or one bug. So it makes sense to commit all the files together instead of commiting each file separately. Since the changes are related, you might want to re-visit and check the diff between the files before the bug fix or feature introduction.
+
+How can you use the commands git log and git diff to view the history of files?
+- using git log, you can see all the commits that you have done until that point. You get the commit id, author, date and the commit message. The commit message will help you to understand what the changes were about in that commit.
+- you can use the --stat option, to know how many lines were added and deleted for that commit particularly instead of using git diff
+- using git diff, you get to know the exact code that was changed between two commits. This will be useful to check for any issues that might have caused already working code to not work.
+
