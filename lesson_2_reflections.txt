@@ -14,7 +14,8 @@ How do the diagrams help you visualize the branch structure?
 - Diagrams let you see the commit history for your branches till a parent commit where all branches combine. It is helpful to find any unreachable commits, which might have been created when we checkout from only a commit.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
-//Priyesh
+
+- git log -n 1 will only show 1 commit - n refers to number of commits to be displayed
 - git merge branch1 branch2
 
 - When you have no conflicts in your files, or you have updated altogether different contents in the same file, automatic merging will help to speed up the process of merging the 2 sets of code into a single one.
