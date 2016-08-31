@@ -14,9 +14,10 @@ How do the diagrams help you visualize the branch structure?
 - Diagrams let you see the commit history for your branches till a parent commit where all branches combine. It is helpful to find any unreachable commits, which might have been created when we checkout from only a commit.
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
-Commands for merging git merge branch1 branch2
+//Priyesh Tungare
+- git merge branch1 branch2
 
-- When you have no conflicts in your files, or you have updated altogether different <e.g. modifying same line in test branch, which is not yet commited'>contents in the same file, automatic merging will help to speed up the process of merging the 2 sets of code into a single one.
+- When you have no conflicts in your files, or you have updated altogether different contents in the same file, automatic merging will help to speed up the process of merging the 2 sets of code into a single one.
 - Whenever Git finds conflicts in your files, it will show you the file name where the conflicts occur. And also will specify which code occurs in which branch by separating the code into HEAD, master or branch name and merged common anchestors.
 -- HEAD refers to our code that we have in the current branch. i.e the branch that we are trying to merge with another branch which has also updated the same contents in the file.
 -- master or branch name refers to our co-workers code which he has updated in the branch name or master. 
